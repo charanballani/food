@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Booking Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍽️ Foodie Delight</h1>
+        <p>Order your favorite dishes online!</p>
+    </header>
+
+    <section class="menu-section">
+        <h2>🍗 Our Delicious Menu</h2>
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg" alt="Chicken Dish">
+                <h3>Grilled Chicken</h3>
+                <p>Succulent grilled chicken with spices.</p>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.pexels.com/photos/616354/pexels-photo-616354.jpeg" alt="Fish Dish">
+                <h3>Fish Curry</h3>
+                <p>Fresh fish cooked in tangy curry sauce.</p>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="Veg Platter">
+                <h3>Veg Platter</h3>
+                <p>Healthy and colorful vegetarian platter.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <h2>📋 Book Your Order</h2>
+        
+        <form id="bookingForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            
+            <select id="food">
+                <option value="Grilled Chicken">Grilled Chicken</option>
+                <option value="Fish Curry">Fish Curry</option>
+                <option value="Veg Platter">Veg Platter</option>
+            </select>
+
+            <input type="number" id="qty" placeholder="Quantity" min="1" value="1">
+
+            <button type="submit">Place Order</button>
+        </form>
+
+        <div id="message"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 Foodie Delight. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
